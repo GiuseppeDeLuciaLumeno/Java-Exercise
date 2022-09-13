@@ -1,5 +1,3 @@
-# Variables Declarations - Exercise 1
+# Variables Declarations - Exercise 2
 
-In questo esercizio si sta cercando di far stampare la frase "Paul plays football", ma se si esegue il codice si noterà l'errore "**personName is not defined**".
-
-Cosa occorre fare per fixare l'errore?
+L'obiettivo di questo esercizio è quello di rendere `personName` una variabile di sola lettura. Qual è la keyword da utilizzare per dichiarare una variabile `readonly`? L'esercizio risulta corretto se in console si ottiene Uncaught TypeError: `Assignment to constant variable`.
