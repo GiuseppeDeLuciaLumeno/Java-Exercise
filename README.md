@@ -1,6 +1,6 @@
-# Conditionals & Loops - Exercise 1
+# Conditionals & Loops - Exercise 2
 
-Implementare, tramite i blocchi condizionali `if / else-if / else`, la funzione `calculateSalary`, la quale, dato in input un ruolo, calcola e restituisce il salario corrispondente.
+Implementare, tramite il blocco condizionali `switch-case`, la funzione `calculateSalary`, la quale, dato in input un ruolo, calcola e restituisce il salario corrispondente.
 Per ogni ruolo il salario percepito è il seguente:
 
 - ceo => 2200€
