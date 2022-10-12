@@ -13,4 +13,3 @@ function canPlay() {
 canPlay();
 
 
-//replaced let personName = "Paul"   --> const personName = "Paul"
