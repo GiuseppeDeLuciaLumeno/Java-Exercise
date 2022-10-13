@@ -1,13 +1,12 @@
-function adultFilter(persons) {
-let score = [];
+function nicknameMap(persons) {
+  let nickName = [];
 
-persons.forEach(element => {
-  if (element.age >= 18) {
-    score.push(element.name)
+  for (const key of persons) {
+    let values = `<${key.name}>-<${key.age}>`;
+    nickName.push(values);
   }
-});
 
-return score
+  return nickName
 }
 
 const persons = [
@@ -23,8 +22,8 @@ const persons = [
   { name: 'Alice', age: 28 }
 ];
 
-const adults = adultFilter(persons);
+const nicknames = nicknameMap(persons);
 console.log(persons);
-console.log(adults);
+console.log(nicknames);
 
 
