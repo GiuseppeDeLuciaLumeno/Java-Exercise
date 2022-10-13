@@ -1,10 +1,3 @@
-# Conditionals & Loops - Exercise 2
+# Conditionals & Loops - Exercise 3
 
-Implementare, tramite il blocco condizionali `switch-case`, la funzione `calculateSalary`, la quale, dato in input un ruolo, calcola e restituisce il salario corrispondente.
-Per ogni ruolo il salario percepito è il seguente:
-
-- ceo => 2200€
-- manager => 1800€
-- cto => 1800€
-- developer => 1500€
-- default => 1000€
+Implementare, tramite blocchi condizionali e/o cicli, la funzione `adultFilter`, la quale, dato un array di persone, filtra e restituisce soltanto coloro che sono maggiorenni
