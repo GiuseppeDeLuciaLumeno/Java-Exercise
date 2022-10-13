@@ -1,3 +1,18 @@
-# Conditionals & Loops - Exercise 5
+# Conditionals & Loops - Exercise 6
 
-Implementare, tramite blocchi condizionali e/o cicli, la funzione `calculateAverageAge`, la quale, dato un array di persone, calcola l'età media
+Implementare, tramite blocchi condizionali e/o cicli, la funzione `getKeys`, la quale, dato in input un qualsiasi oggetto, restituisce la lista delle chiavi presenti al suo interno
+
+Esempio:
+
+```
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 32,
+  city: 'Rome',
+  job: 'Developer',
+};
+
+const keys = getKeys(person);
+console.log(keys); // ['firstName', 'lastName', 'age', 'city', 'job']
+```
