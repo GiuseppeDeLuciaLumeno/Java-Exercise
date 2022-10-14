@@ -1,5 +1,5 @@
 function greet(greeting) {
-  return function greetPaulWithHello(name) {
+  return function closures(name) {
     return `${greeting} ${name}`
   }
 }
