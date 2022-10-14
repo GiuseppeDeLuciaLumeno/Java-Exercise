@@ -1,3 +1,3 @@
-# Arrow functions - Exercise 1
+# Arrow functions - Exercise 2
 
-Trasformare le due variabili funzione (`sum` e `log`) in due arrow functions
+Trasformare la variabile funzione `concat` in una arrow function
