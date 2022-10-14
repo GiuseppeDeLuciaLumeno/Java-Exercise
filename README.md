@@ -1,3 +1,3 @@
-# Arrow functions - Exercise 2
+# Arrow functions - Exercise 3
 
-Trasformare la variabile funzione `concat` in una arrow function
+Trasforma le variabili funzione in arrow functions e concatenale in modo tale che venga stampato sulla console il risultato della seguente operazione matematica: `((2 + 4) * (5 + 2) - 2) / 5`
