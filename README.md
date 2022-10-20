@@ -1,3 +1,9 @@
-# Object References - Exercise 1
+# Object Methods - Exercise 1
 
-Creare all'interno dell'oggetto `person` i metodi: `fullName()` e `info()`, i quali utilizzano le proprietà dell'oggetto per stampare rispettivamente il nome completo e le informazioni anagrafiche comprensive di posizione lavorativa
+Utilizzando l'oggetto `person`, stampare in console le coppie chiave/valore, provando ad utilizzare il metodo `Object.keys`:
+
+```
+firstName: Mario
+lastName: Rossi
+age: 25
+```

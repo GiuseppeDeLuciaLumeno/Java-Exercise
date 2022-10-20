@@ -1,16 +1,17 @@
 const person = {
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 25,
-  job: 'Web Developer',
-  fullName() {
-    return `${this.firstName} ${this.lastName}`;
-  },
-
-  info(){
-    return `${this.firstName} ${this.lastName}, ${this.age} - ${this.job}`;
-  }
+  firstName: 'Mario',
+  lastName: 'Rossi',
+  age: 25
 }
 
-console.log(person.fullName()); // John Doe
-console.log(person.info()); // John Doe, 25 - Web Developer
+// Print values of person using Object.keys
+
+for (const key of Object.keys(person)) {
+  const values = person[key];
+  console.log(key, values);
+}
+
+
+
+
+
