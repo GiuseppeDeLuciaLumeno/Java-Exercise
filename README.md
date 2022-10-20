@@ -1,18 +1,20 @@
-# Closure - Exercise 4
+# Closure - Exercise 5
 
-Implementare la funzione `calculate` che restituisce un oggetto che dia la possibilità di eseguire le quattro operazioni matematiche (somma, sottrazione, moltiplicazione e divisione) su uno stesso numero e infine consente di stamparne il risultato.
-
-**TIP**: Per concatenare i metodi basta restituire il riferimento all'oggetto stesso (`$this`)
+Implementare la funzione `memoize` che, data in input la funzione per il calcolo del fattoriale, restituisce una closure che accetta come argomento un numero su cui eseguire la funzione per il calcolo del fattoriale, verifica se il risultato è già presente all'interno della variabile `cache`, se è presente restituisce immediatamente il risultato memorizzato precedentemente, altrimenti esegue la funzione passata come argomento e memorizza il risultato all'interno della variabile `cache`, così da servire il risultato cachato precedentemente qualora venga richiesto il fattoriale per lo stesso numero.
 
 Esempio:
+```
+let factory = memoize(factorial);
+console.log(factorial(10)); // Calculating result for 3628800
+console.log(factorial(6)); // Fetching from cache for 720
+console.log(factorial(5)); // Fetching from cache for 120
+```
 
-```
-calculator
-  .add(2) // 2
-  .add(4) // 6
-  .multiply(3) // 18
-  .sub(1) // 17
-  .sub(3) // 14
-  .divide(2) // 7
-  .printResult();
-```
+Se il valore è stato già calcolato precedentemente restituire una stringa `Fetching from cache for {valore_passato_in_input}`, altrimenti, se non è stato ancora calcolato, restituire una stringa: `Calculating result for {valore_passato_in_input}`. Inoltre modificare l'esempio in:
+`
+let factory = memoize(factorial);
+console.log(factorial(10)); // Calculating result for 10
+console.log(factorial(6)); // Calculating result for 6
+console.log(factorial(5)); // Calculating result for 5
+console.log(factorial(5)); // Fetching from cache for 5
+`
