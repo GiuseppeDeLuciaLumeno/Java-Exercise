@@ -1,9 +1,9 @@
-# Object Methods - Exercise 1
+# Object Methods - Exercise 2
 
-Utilizzando l'oggetto `person`, stampare in console le coppie chiave/valore, provando ad utilizzare il metodo `Object.keys`:
+Utilizzando l'oggetto `person` stampare in console i suoi valori, provando ad utilizzare il metodo `Object.values`:
 
 ```
-firstName: Mario
-lastName: Rossi
-age: 25
+Mario
+Rossi
+25
 ```
