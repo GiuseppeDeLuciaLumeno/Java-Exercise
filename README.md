@@ -1,3 +1,4 @@
-# Optional Chaining - Exercise 1
+# Optional Chaining - Exercise 2
 
-In questo esempio si sta cercando di eseguire il console.log di due proprietà non presenti all'interno dell'oggetto `person`, come posso sistemare il codice d'esempio così da non ricevere un errore in console?
+In questo esempio si sta cercando di controllare se è stato specificato un valore per la proprietà `city`, tuttavia il codice si presenta in maniera poco leggibile.
+Come si può migliorare e semplificare il codice d'esempio?
