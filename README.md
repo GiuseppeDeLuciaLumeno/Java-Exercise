@@ -1,3 +1,9 @@
-# Array Methods - Exercise 1
+# Array Methods - Exercise 2
 
-Implementare la funzione `adultFilter` che, dato un array di persone, filtra e restituisce soltanto coloro che sono maggiorenni.
+Implementare la funzione `nicknameMap` che, dato un array di persone, crea un array di nickname. Il nickname deve essere formato in questa modo: `<name>-<age>`.
+
+Esempio:
+
+```
+{ name: 'Paul', age: 21 } => Paul-21
+```
