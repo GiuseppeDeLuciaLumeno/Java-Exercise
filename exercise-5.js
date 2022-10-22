@@ -1,11 +1,10 @@
-function uncompletedNotes(notes) {
+function firstUncompletedNote(notes) {
 
-return filt = notes.filter((item) =>{
-  // console.log(filt);
-  return item.todos.some(item => item.done === false)
-})
-  }
+return filt = notes.find((item) => {
+  return item.todos.find(item => item.done === false)
+});
 
+}
 
 const notes = [
   {
@@ -15,7 +14,7 @@ const notes = [
       {
         id: 1,
         name: 'Push ups - 10 x 3',
-        done: false
+        done: true
       },
       {
         id: 2,
@@ -26,7 +25,7 @@ const notes = [
         id: 3,
         name: 'Tapis Roulant - 15min',
         done: true
-      },
+      }
     ]
   },
   {
@@ -41,7 +40,7 @@ const notes = [
       {
         id: 2,
         name: 'Learn CSS',
-        done: true
+        done: false
       },
       {
         id: 3,
@@ -51,14 +50,33 @@ const notes = [
       {
         id: 4,
         name: 'Learn Angular',
+        done: false
+      }
+    ]
+  },
+  {
+    id: 3,
+    description: 'My Movies Library',
+    todos: [
+      {
+        id: 1,
+        name: 'La città incantata',
         done: true
       },
+      {
+        id: 2,
+        name: 'Avatar',
+        done: true
+      },
+      {
+        id: 3,
+        name: 'Titanic',
+        done: false
+      }
     ]
   }
 ]
 
-const notesInProgress = uncompletedNotes(notes);
-console.log('All notes: ', notes);
-console.log('Notes In Progress: ', notesInProgress);
-
-
+const noteInProgress = firstUncompletedNote(notes);
+// console.log('All notes: ', notes);
+console.log('First note in progress: ', noteInProgress);

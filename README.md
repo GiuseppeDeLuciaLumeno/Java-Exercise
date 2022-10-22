@@ -1,4 +1,4 @@
-# Array Methods - Exercise 4
+# Array Methods - Exercise 5
 
-Implementare la funzione `uncompletedNotes` che, dato un array di note, restituisce soltanto le note non completate.
+Implementare la funzione `firstUncompletedNote` che, dato un array di note, restituisce la prima nota non completata.
 Una nota viene considerata completata se **tutti** i todo presenti hanno il flag `done` impostato a `true`.
