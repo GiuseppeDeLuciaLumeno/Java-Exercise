@@ -1,3 +1,4 @@
-# Array Methods - Exercise 3
+# Array Methods - Exercise 4
 
-Implementare la funzione `ageAverage` che, dato un array di persone, calcola l'età media.
+Implementare la funzione `uncompletedNotes` che, dato un array di note, restituisce soltanto le note non completate.
+Una nota viene considerata completata se **tutti** i todo presenti hanno il flag `done` impostato a `true`.
