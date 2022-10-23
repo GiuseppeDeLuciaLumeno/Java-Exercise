@@ -1,6 +1,3 @@
-# Classes - Exercise 4
-Definire la classe `BankAccount` che, dato in input un importo iniziale, consente di eseguire operazioni di deposito, ritiro e visualizzazione sul proprio conto corrente. La classe in questione dovrà implementare i seguenti metodi:
+# Classes - Exercise 5
 
-* `deposit`: un metodo pubblico che consente di aggiungere fondi al proprio conto corrente
-* `withdraw`: un metodo pubblico che consente di ritirare fondi dal proprio conto corrente
-* `view`: un metodo pubblico che consente di visualizzare in console il saldo finale del conto corrente
+Definire la classe `BankAccountVip` che estendendo dalla classe `BankAccount`, oltre a consentire tutte le operazioni di quest'ultima, permette all'utente di ottenere un interesse del 3% sull'importo depositato, ma solo se quest'ultimo è maggiore o uguale a 1000€. Il risultato finale deve essere 5541.
