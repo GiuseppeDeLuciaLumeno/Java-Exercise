@@ -1,5 +1,4 @@
-# Error handling - Exercise 3
-Sostituire il lancio delle eccezioni con due classi custom che estendono dalla classe `Error`:
+# Destructuring assignment - Exercise 1
 
-* `NegativeAmountError`: classe custom qualora viene fornito un importo negativo
-* `WithdrawNotPermittedError`: classe custom qualora si cerca di ritirare dal proprio conto corrente un importo maggiore rispetto al totale consentito
+Utilizzare la destrutturazione, al posto di una variabile temporanea, per eseguire lo swapping delle variabili (per swapping s'intende lo scambio di valori tra due variabili).
+Suggerimento: fare riferimento alla documentazione ufficiale <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment>
