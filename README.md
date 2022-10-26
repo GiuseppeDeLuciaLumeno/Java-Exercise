@@ -1,4 +1,9 @@
-# Destructuring assignment - Exercise 3
+# Destructuring assignment - Exercise 4
+Utilizzare la destrutturazione per stampare la lista dei valori delle proprietà presenti in `person`:
 
-Utilizzare la destrutturazione per semplificare il controllo sull'età della persona, modificando il parametro della funzione.
-Suggerimento: fare riferimento alla documentazione ufficiale <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment>
+```
+id: 1
+firstName: Mario
+lastName: Rossi
+age: 25
+```
