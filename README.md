@@ -1,2 +1,4 @@
-# Destructuring assignment - Exercise 2
-Utilizzare la destrutturazione per eseguire l'assegnazione dei valori tramite un'unica linea di codice
+# Destructuring assignment - Exercise 3
+
+Utilizzare la destrutturazione per semplificare il controllo sull'età della persona, modificando il parametro della funzione.
+Suggerimento: fare riferimento alla documentazione ufficiale <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment>
