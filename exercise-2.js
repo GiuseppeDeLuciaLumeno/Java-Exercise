@@ -21,11 +21,13 @@ const persons = [
 
 function fetchPersonById(id) {
   return new Promise((resolve, reject) => {
-    if (id) {
+    setTimeout(() => {
+       if (id) {
       resolve(id);
     } else {
       reject(new Error("Non hai inserito Nessun ID"))
     }
+    },3000)
   })
 }
 
@@ -35,5 +37,3 @@ callPerson
 .then((id) => {
   return console.log(persons.filter(item => item.id === id));
 })
-
-
