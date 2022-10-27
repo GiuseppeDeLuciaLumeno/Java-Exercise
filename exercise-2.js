@@ -21,19 +21,15 @@ const persons = [
 
 function fetchPersonById(id) {
   return new Promise((resolve, reject) => {
-    if (id) {
-      resolve(id);
-    } else {
-      reject(new Error("Non hai inserito Nessun ID"))
-    }
+    setTimeout(() => {
+      if (id in persons) {
+        resolve(persons.find(item => item.id === id))
+      } else {
+        reject(new Error("Non è presente nessun ID"))
+      }
+    }, 2000)
   })
 }
 
-let callPerson = fetchPersonById(2);
 
-callPerson
-.then((id) => {
-  return console.log(persons.filter(item => item.id === id));
-})
-
-
+fetchPersonById(2).then((person) => console.log(person));
