@@ -1,2 +1,2 @@
-# Rest parameters and spread syntax - Exercise 2
-Come posso migliorare la leggibilità del codice estraendo la proprietà `id` dall'oggetto `person` e mantenere aggregate il resto delle proprietà all'interno dell'oggetto `personInfo`?
+# Rest parameters and spread syntax - Exercise 3
+Come mergiare il valore di `newNumber` all'interno di `numberStore` senza utilizzare il metodo `push`?
