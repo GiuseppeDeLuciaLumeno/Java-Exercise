@@ -33,14 +33,17 @@ function fetchPersonById(id) {
       } else {
         reject(new Error("L'ID che hai inserito non è presente"))
       }
-    }, 0000)
+    }, 2000)
   })
 }
 
 
-  fetchPersonById(5)
+  fetchPersonById(4)
   .then((person) => console.log(person))
   .catch((e) => console.log(e))
+
+  
+
 
 
 
