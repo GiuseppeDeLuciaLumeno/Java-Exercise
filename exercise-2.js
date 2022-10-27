@@ -16,20 +16,32 @@ const persons = [
     firstName: 'Giovanni',
     lastName: 'Rossi',
     age: 35
-  }
+  },
+  {
+    id: 5,
+    firstName: 'Giovanni',
+    lastName: 'Rossi',
+    age: 35
+  },
 ];
 
 function fetchPersonById(id) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (id in persons) {
+      if (persons.find(item => item.id === id)) {
         resolve(persons.find(item => item.id === id))
       } else {
-        reject(new Error("Non è presente nessun ID"))
+        reject(new Error("L'ID che hai inserito non è presente"))
       }
-    }, 2000)
+    }, 0000)
   })
 }
 
 
-fetchPersonById(2).then((person) => console.log(person));
+  fetchPersonById(5)
+  .then((person) => console.log(person))
+  .catch((e) => console.log(e))
+
+
+
+
