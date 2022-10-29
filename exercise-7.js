@@ -35,7 +35,8 @@ const persons = [
 
 let callAsyncFunction = async(funtion) => {
   const response = await funtion
-  console.log(response);
+  const data = JSON.parse(response)
+  console.log(data);
 }
 
 callAsyncFunction(fetchPersonById(2))
