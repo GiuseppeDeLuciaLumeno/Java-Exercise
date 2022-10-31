@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; align-items: center;"></div>
+  </body>
+</html>
+
+<script>
+const displayer = document.querySelector("#container")
+const url = "https://jsonplaceholder.typicode.com/todos/4"
+
+let getData = async() => {
+const response = await fetch(url)
+const data = await response.json()
+console.log(data);
+let title = document.createElement("h1")
+let checkBox = document.createElement("input")
+checkBox.setAttribute("type", "checkbox")
+// if (data.completed) {
+//   checkBox.setAttribute("checked", "") //empty string works anyway
+// }
+checkBox.checked = data.completed
+title.innerHTML = data.title
+displayer.append(title) + displayer.prepend(checkBox)
+}
+
+getData()
+</script>
