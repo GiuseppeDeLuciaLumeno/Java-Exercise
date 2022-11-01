@@ -1,0 +1,44 @@
+<html>
+  <body>
+    <div id="container">
+      <h2>Person's Form</h2>
+      <form id="person-form">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  const form = document.querySelector("#person-form")
+  const button = document.querySelector("button")
+  let anag = ["Firstname", "Lastname", "age"];
+
+  let initForm  = () => {
+    anag.forEach(item => {
+     let label = document.createElement("label")
+     label.innerHTML += item
+     let input = document.createElement("input")
+      input.type = "text"
+      input.id = "input"
+
+      button.before(label)
+      button.before(input)
+    })
+  }
+
+ document.addEventListener("DOMContentLoaded", () => {
+    initForm();
+  })
+
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+       const input = document.querySelectorAll("input");
+        let person = {
+          firstName: input[0].value,
+          lastName: input[1].value,
+          age: input[2].value,
+        }
+        console.log(person)
+  })
+</script>
